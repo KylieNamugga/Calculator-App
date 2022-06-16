@@ -1,3 +1,4 @@
+/* before and after the box elements */
 *,
 *::before,
 *::after {
@@ -19,13 +20,14 @@ body {
     justify-content: center;
     align-content: center;
     min-height: 100vh;
+    /* four columns */
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(100px, auto) repeat(5, 90px);
 }
 
 .calculator-grid>button {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5em;
     border: 1px solid wheat;
     outline: none;
     background-color: white;
@@ -35,6 +37,7 @@ body {
     background-color: rgba(14, 14, 200, 0.528);
 }
 
+/* fill up two grid column for equal and all clear */
 .span-two {
     grid-column: span 2;
 }
